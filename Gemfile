@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.5'
 # Use postgresql as the database for Active Record
 
 gem 'table_print'
+gem 'pg'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -58,10 +59,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-end
-
-group :production do
-  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
